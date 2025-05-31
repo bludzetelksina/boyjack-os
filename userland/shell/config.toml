@@ -1,0 +1,28 @@
+# Конфигурация оболочки BoyJack OS
+
+# Переменные окружения
+[env]
+PATH = "/bin:/usr/bin:/usr/local/bin"
+EDITOR = "vim"
+PAGER = "less"
+USER = "boyjack"
+HOME = "/home/boyjack"
+
+# Псевдонимы (aliases)
+[aliases]
+ll = "ls -la"
+grep = "grep --color=auto"
+rm = "rm -i"
+update = "sudo boyjack-update"
+
+# Опции отображения оболочки
+[display]
+prompt = "boyjack> "        # Текст приглашения
+show_command_number = true  # Показывать номер команды в истории
+enable_colors = true        # Использовать цветной вывод
+history_size = 1000         # Максимальное количество команд в истории
+
+# Опции автодополнения
+[completion]
+enable = true
+max_suggestions = 10
